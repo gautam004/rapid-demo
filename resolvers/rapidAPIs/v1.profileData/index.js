@@ -64,7 +64,8 @@ async function checkCurrentStatus(){
 }
 
 async function delayResponse(userName, responseType) {
- const canWeExecuteRequest =  await Promise.resolve(setTimeout(checkCurrentStatus,60));
+ const canWeExecuteRequest =  await Promise.resolve(setTimeout(checkCurrentStatus,10000));
+ // waiting only for 10seconds to check if request can now be served
  let response;
  if(canWeExecuteRequest){
     let profilAPIresponse= await getProfileDataApiResponse(userName, responseType);

@@ -1,4 +1,4 @@
 # rapid-demo
-Commands to run:
+Commands to start:
 npm install
 node app.js
